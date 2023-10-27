@@ -1,0 +1,34 @@
+
+  <h1> Stock List</h1>
+
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Symbol</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Volume</th>
+        <th>Sector</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let stock of stocks">
+        <td>{{ stock.symbol }}</td>
+        <td>{{ stock.name }}</td>
+        <td>{{ stock.price }}</td>
+        <td>{{ stock.volume }}</td>
+        <td>{{ stock.sector }}</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <div class="row">
+      <button  class="btn btn-success">Add</button>
+  </div>
+
+</div>
